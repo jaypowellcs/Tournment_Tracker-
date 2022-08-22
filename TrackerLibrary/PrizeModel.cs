@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
-    public class TournamentModel
+    public class PrizeModel
     {
-       public String TournamentName { get; set; }
-       public decimal EntryFee { get; set; }
-       public List<TeamModel> EnteredTeams { get; set; } = new List<TeamModel>();
-       public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
-       public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
+       public int PlaceNumber { get; set; }
+       public string PlaceName { get; set; }
+       public decimal PrizeAmount { get; set; }
+       public double PrizePercentage { get; set; }
     }
 }
